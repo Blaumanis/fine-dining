@@ -1,0 +1,39 @@
+.foodItem {
+  box-shadow: 2px 4px 4px #7da2a9;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+.foodItem:hover img {
+  scale: 1.1;
+}
+
+.foodItem img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: scale 300ms linear;
+}
+
+.titleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 1rem;
+}
+
+.titleContainer h2 {
+  font-size: 2rem;
+}
+.titleContainer h4 {
+  color: #7da2a9;
+  font-size: 1.1rem;
+}
+@media screen and (max-width: 768px) {
+  .titleContainer h2 {
+    font-size: 1.5rem;
+  }
+  .titleContainer h4 {
+    font-size: 1rem;
+  }
+}
