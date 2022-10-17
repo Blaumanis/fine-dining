@@ -58,7 +58,7 @@ export default function Home({ foods }) {
       <select onChange={(e)=> setFilter(e.target.value)} aria-label="Filter Menu by Category" className={styles.categories}>
       <option value="">all</option>
         {categories.map((item,idx)=>(
-          <option key={idx} value={item}>{item}</option>
+          <option key={item} value={item}>{item}</option>
         ))}
       </select>
         {filterByCategory(foods).map((food,idx) => (

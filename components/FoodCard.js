@@ -3,7 +3,7 @@ import styles from '../styles/FoodCard.module.css'
 
 const FoodCard = ({ title, slug, coverPhoto, price, id }) => {
   return (
-    <article className={styles.foodItem} key={id}>
+    <article className={styles.foodItem}>
       <Link href={`/foods/${slug}`}>
         <div className={styles.card}>
           <img src={coverPhoto.url} alt='alt' />
